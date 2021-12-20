@@ -1,0 +1,383 @@
+/* Definición Paleta de Colores */
+$color-primario: #55A;
+$prussian-blue: #012a4aff;
+$indigo-dye: #013a63ff;
+$indigo-dye-2: #01497cff;
+$usafa-blue: #014f86ff;
+$sapphire-blue: #2a6f97ff;
+$celadon-blue: #2c7da0ff;
+$blue-green: #468fafff;
+$maximum-blue: #61a5c2ff;
+$dark-sky-blue: #89c2d9ff;
+$light-blue: #a9d6e5ff;
+
+/* Variables */
+$shadow-div: 2px 3px 0.2rem 0.1rem rgb(163, 163, 163);
+
+/* Reset */
+* { 
+    margin: 0;
+    padding: 0; 
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    margin-top: 0rem;
+    margin-bottom: 0.2rem;
+}
+
+span {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.container{
+    margin: 1rem auto;
+}
+
+.texto-quienes-somos{
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Estilos Navbar */
+.navbar{
+    .navbar-brand{
+        width: 15rem;
+        padding: 0;
+        margin-right: 0rem;
+    }
+}
+
+.seccion-sticky{
+    position: sticky;
+    top: 0rem;
+    left: 0rem;
+    z-index: 2;
+}
+
+.navbar-dark{
+    background-color: $prussian-blue;
+}
+
+.dropdown-menu{
+    background-color: $prussian-blue;
+}
+.dropdown-item{
+    color: rgba(255, 255, 255, 0.75);
+    background-color:$prussian-blue;
+}
+
+/* Estilos Botón WhatsApp */
+.botonWhatsApp{
+    img{
+        width: 70px;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    img:hover{
+        transform:scale(1.2,1.2)
+    }
+}
+
+/* Estilos Footer */
+.footer{
+    margin: 1rem auto auto auto;
+    color: #ffffff;
+    background: linear-gradient(to bottom, $prussian-blue, $sapphire-blue);
+}
+
+.contenedor-logo{
+    display:none;
+}
+
+.opciones-menu{
+    text-align: center;
+
+    .p{
+        margin: 0rem;
+        padding: 0rem;
+    }
+
+    a{
+        color: #ffffff;
+        text-decoration: none;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 1px;
+        transition: background-size .5s;
+    }
+
+    a:hover {
+        color: $dark-sky-blue;
+        background-size: 100% 1px;
+    }
+}
+
+.redes-sociales{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    i:hover{
+        color: $dark-sky-blue;
+    }
+}
+
+.fab {
+    font-size:2rem;
+    color:rgb(255, 255, 255);
+    border: white;
+    margin: 0.5rem;
+}
+
+.fas{
+    font-size:2rem;
+    color:rgb(255, 255, 255);
+    border: white;
+    margin: 0.5rem
+}
+
+.copyright{
+    text-align: center;
+    background-color: #dfdedeaa;
+    font-weight: bold;
+    margin-top:0.25rem;
+
+    .p{
+        color: rgb(0, 0, 0);
+    }
+}
+
+/* Estilos Home */
+.container-caso{
+    background-color: rgb(191, 191, 191);
+    text-align: center;
+    padding-top: 0.1rem;
+    padding-bottom: 1rem;
+
+    .container-titulo{
+        border-bottom: 1px solid rgb(255, 255, 255);
+    }
+
+    h2, h3{
+        color: rgb(252, 252, 252);
+    }
+
+
+    .paso-caso{
+        text-align: center;
+        align-items: center;
+    }
+}
+
+/* Estilos Quienes Somos*/
+.container-titulo{
+    margin: 1rem auto;
+}
+
+.img-centrada{
+    display: block; 
+    margin: auto;
+    width: 100%;
+}
+
+.container-card{
+    margin: 0.5rem 0rem;
+    
+    .card{
+        margin: auto;
+        min-height: 25rem;
+        border: 0.2rem solid rgba(0, 0, 0, 0.125);
+        width: 18rem;
+
+        .card-img-top{
+            width: 60%;
+            margin: auto;
+        }
+    }
+}
+
+.container-card-area{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0rem;
+
+    .card-area{
+        margin: 0.5rem 0rem;
+        box-shadow: $shadow-div;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+/* Estilos Administración de Consorcios */
+.texto-admin{
+    text-align:center;
+
+    .btn{
+        width: 12rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+.container-medios-pago{
+    .medio-pago{
+        display: flex;
+        align-items: center;
+        align-content: center;
+
+        img{
+            margin: auto;
+            height: 75%;
+        }
+    }
+}
+
+/* Estilos Estudio Jurídico */
+.container-areas{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+/* Estilos Contacto - Medios de Contacto */
+.contenedor-tarjetas{
+    margin:1rem 0rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    .card{
+        margin: 0.3rem;
+        text-align: center;
+        align-items: center;
+        height: 7rem;
+        box-shadow: $shadow-div;
+
+        .img-contacto-chica{
+            width: 3rem;
+        }
+
+        .card-body{
+            padding:0.25rem;
+        }
+    }
+}
+
+/* Estilos Contacto - Formulario */
+#contenedor-formulario-contacto{
+    margin-bottom: 1.5rem;
+
+    .formulario-contacto{
+        margin: 1rem 0rem;
+        padding: 1rem 1rem;
+        box-shadow: $shadow-div;
+
+        h2{
+            text-align: center;
+            text-decoration:underline;
+            color: $sapphire-blue;
+        }
+
+        .contenedor-botones-formulario{
+            text-align: center;
+
+            .btn-form{
+                width: 8rem;
+            }
+        }
+    }
+}
+
+/* Estilos Alerta */
+.alert-info{
+    .card-body{
+    margin-top: 0.5rem;
+    }
+}
+
+/* Estilos Contacto - Mapa */
+#contenedor-mapa{
+    text-align: center;
+}
+
+/* Medias Querys */
+@media only screen and (min-width: 992px) {
+    .texto-quienes-somos{
+        margin-top: 0rem;
+    }
+    .navbar-brand{
+        width: 25rem;
+        padding: 0;
+    }
+    .opciones-menu{
+        text-align: left;
+    }
+    .contenedor-logo{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .texto-quienes-somos{
+        font-size: 1.2rem;
+        text-align: left;
+    }
+    .img-chica{
+        width: 90%;
+    }
+    .container-card{
+        margin: 2rem 0rem;
+        
+        .card{
+            margin: auto;
+            min-height: 35rem;
+            border: 0.2rem solid rgba(0, 0, 0, 0.125);
+    
+            .card-img-top{
+                width: 100%;
+                margin: auto;
+            }
+        }
+    }
+    .container-card-area{
+        .card-area{
+            margin: 0.5rem 0.1rem;
+        }
+    }
+    .container-medios-pago{
+        .medio-pago{
+            display: flex;
+            align-items: center;
+            align-content: center;
+    
+            img{
+                margin: auto;
+                height: 50%;
+            }
+        }
+    }
+    #contenedor-formulario-contacto{
+        .formulario-contacto{
+            margin: 1rem 8rem;
+            padding: 1rem 2rem;
+        }
+    }
+}
+
+/* Animaciones */
+.animacion-aparecer{
+    animation-duration: 4s;
+    animation-name: aparecer;
+}
+
+@keyframes aparecer {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}

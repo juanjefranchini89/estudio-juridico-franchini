@@ -1,0 +1,268 @@
+@charset "UTF-8";
+/* Definición Paleta de Colores */
+/* Variables */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; }
+
+p {
+  margin-top: 0rem;
+  margin-bottom: 0.2rem; }
+
+span {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.5rem; }
+
+.container {
+  margin: 1rem auto; }
+
+.texto-quienes-somos {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 1rem; }
+
+/* Estilos Navbar */
+.navbar .navbar-brand {
+  width: 15rem;
+  padding: 0;
+  margin-right: 0rem; }
+
+.seccion-sticky {
+  position: sticky;
+  top: 0rem;
+  left: 0rem;
+  z-index: 2; }
+
+.navbar-dark {
+  background-color: #012a4aff; }
+
+.dropdown-menu {
+  background-color: #012a4aff; }
+
+.dropdown-item {
+  color: rgba(255, 255, 255, 0.75);
+  background-color: #012a4aff; }
+
+/* Estilos Botón WhatsApp */
+.botonWhatsApp img {
+  width: 70px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px; }
+
+.botonWhatsApp img:hover {
+  transform: scale(1.2, 1.2); }
+
+/* Estilos Footer */
+.footer {
+  margin: 1rem auto auto auto;
+  color: #ffffff;
+  background: linear-gradient(to bottom, #012a4aff, #2a6f97ff); }
+
+.contenedor-logo {
+  display: none; }
+
+.opciones-menu {
+  text-align: center; }
+  .opciones-menu .p {
+    margin: 0rem;
+    padding: 0rem; }
+  .opciones-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size .5s; }
+  .opciones-menu a:hover {
+    color: #89c2d9ff;
+    background-size: 100% 1px; }
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .redes-sociales i:hover {
+    color: #89c2d9ff; }
+
+.fab {
+  font-size: 2rem;
+  color: white;
+  border: white;
+  margin: 0.5rem; }
+
+.fas {
+  font-size: 2rem;
+  color: white;
+  border: white;
+  margin: 0.5rem; }
+
+.copyright {
+  text-align: center;
+  background-color: #dfdedeaa;
+  font-weight: bold;
+  margin-top: 0.25rem; }
+  .copyright .p {
+    color: black; }
+
+/* Estilos Home */
+.container-caso {
+  background-color: #bfbfbf;
+  text-align: center;
+  padding-top: 0.1rem;
+  padding-bottom: 1rem; }
+  .container-caso .container-titulo {
+    border-bottom: 1px solid white; }
+  .container-caso h2, .container-caso h3 {
+    color: #fcfcfc; }
+  .container-caso .paso-caso {
+    text-align: center;
+    align-items: center; }
+
+/* Estilos Quienes Somos*/
+.container-titulo {
+  margin: 1rem auto; }
+
+.img-centrada {
+  display: block;
+  margin: auto;
+  width: 100%; }
+
+.container-card {
+  margin: 0.5rem 0rem; }
+  .container-card .card {
+    margin: auto;
+    min-height: 25rem;
+    border: 0.2rem solid rgba(0, 0, 0, 0.125);
+    width: 18rem; }
+    .container-card .card .card-img-top {
+      width: 60%;
+      margin: auto; }
+
+.container-card-area {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0rem; }
+  .container-card-area .card-area {
+    margin: 0.5rem 0rem;
+    box-shadow: 2px 3px 0.2rem 0.1rem #a3a3a3;
+    text-align: center;
+    align-items: center; }
+
+/* Estilos Administración de Consorcios */
+.texto-admin {
+  text-align: center; }
+  .texto-admin .btn {
+    width: 12rem;
+    margin-bottom: 0.5rem; }
+
+.container-medios-pago .medio-pago {
+  display: flex;
+  align-items: center;
+  align-content: center; }
+  .container-medios-pago .medio-pago img {
+    margin: auto;
+    height: 75%; }
+
+/* Estilos Estudio Jurídico */
+.container-areas {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+/* Estilos Contacto - Medios de Contacto */
+.contenedor-tarjetas {
+  margin: 1rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contenedor-tarjetas .card {
+    margin: 0.3rem;
+    text-align: center;
+    align-items: center;
+    height: 7rem;
+    box-shadow: 2px 3px 0.2rem 0.1rem #a3a3a3; }
+    .contenedor-tarjetas .card .img-contacto-chica {
+      width: 3rem; }
+    .contenedor-tarjetas .card .card-body {
+      padding: 0.25rem; }
+
+/* Estilos Contacto - Formulario */
+#contenedor-formulario-contacto {
+  margin-bottom: 1.5rem; }
+  #contenedor-formulario-contacto .formulario-contacto {
+    margin: 1rem 0rem;
+    padding: 1rem 1rem;
+    box-shadow: 2px 3px 0.2rem 0.1rem #a3a3a3; }
+    #contenedor-formulario-contacto .formulario-contacto h2 {
+      text-align: center;
+      text-decoration: underline;
+      color: #2a6f97ff; }
+    #contenedor-formulario-contacto .formulario-contacto .contenedor-botones-formulario {
+      text-align: center; }
+      #contenedor-formulario-contacto .formulario-contacto .contenedor-botones-formulario .btn-form {
+        width: 8rem; }
+
+/* Estilos Alerta */
+.alert-info .card-body {
+  margin-top: 0.5rem; }
+
+/* Estilos Contacto - Mapa */
+#contenedor-mapa {
+  text-align: center; }
+
+/* Medias Querys */
+@media only screen and (min-width: 992px) {
+  .texto-quienes-somos {
+    margin-top: 0rem; }
+  .navbar-brand {
+    width: 25rem;
+    padding: 0; }
+  .opciones-menu {
+    text-align: left; }
+  .contenedor-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .texto-quienes-somos {
+    font-size: 1.2rem;
+    text-align: left; }
+  .img-chica {
+    width: 90%; }
+  .container-card {
+    margin: 2rem 0rem; }
+    .container-card .card {
+      margin: auto;
+      min-height: 35rem;
+      border: 0.2rem solid rgba(0, 0, 0, 0.125); }
+      .container-card .card .card-img-top {
+        width: 100%;
+        margin: auto; }
+  .container-card-area .card-area {
+    margin: 0.5rem 0.1rem; }
+  .container-medios-pago .medio-pago {
+    display: flex;
+    align-items: center;
+    align-content: center; }
+    .container-medios-pago .medio-pago img {
+      margin: auto;
+      height: 50%; }
+  #contenedor-formulario-contacto .formulario-contacto {
+    margin: 1rem 8rem;
+    padding: 1rem 2rem; } }
+
+/* Animaciones */
+.animacion-aparecer {
+  animation-duration: 4s;
+  animation-name: aparecer; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
